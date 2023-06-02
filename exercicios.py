@@ -564,3 +564,7 @@ for c in range(p, dec + r, r):
 print('Fim')
 '''
 
+#exercicio 52
+
+
+
