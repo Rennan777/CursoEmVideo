@@ -378,7 +378,7 @@ elif i < 18:
 
 #exercicio 40
 '''
-n1 = float(input('Digite a primeira nota: '))
+n1 = float(input('D igite a primeira nota: '))
 n2 = float(input('Digite a segunda nota: '))
 m = (n1 + n2) / 2
 print('Sua média é de {:.2f}'.format(m))
