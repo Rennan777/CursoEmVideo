@@ -549,7 +549,7 @@ for c in range(1, 7):
     n = int(input('Digite o {}o valor: '.format(c)))
     if n % 2 == 0:
             s += n
-            cont += 1
+            cont += 1 
 print('voce informou {} valores pares e a soma deles é de {}'.format(cont, s))
 '''
 
@@ -565,6 +565,50 @@ print('Fim')
 '''
 
 #exercicio 52
+'''
+num = int(input('Digite um numero: '))
+tot = 0
+for c in range(1, num + 1):
+    if num % c == 0:
+        print('\033[33m', end='')
+        tot += 1
+    else:
+        print('\033[31m', end='')
+    print('{} '.format(c), end='')
+print('\n\033[mO numero {} foi divisível {} vezes.'.format(num, tot))
+if tot == 2:
+    print('E por isso é PRIMO')
+else:
+    print('E por isso, NÃO é PRIMO')
+'''
 
+#exercicio 53
+#com 'for'
+'''
+frase = str(input('Digite uma frase: ')).strip().upper() ##remove espaços e deixa maiusculo
+palavras = frase.split()                                 ##separa palavras
+junto = ''.join(palavras)                                ##junta palavras (ao separar e juntar, remove espaços entre palavras
+inverso = ''
+for letra in range(len(junto) -1, -1, -1):               ##len(junto) -1 = pega a ultima letra, -1 = ate a primeira letra (0 menos 1), -1 = voltar caractere
+    inverso += junto[letra]
+if inverso == junto:
+    print('É palíndromo!')
+else:
+    print('Não é palíndromo.')
+print('Voce digitou a frase: {}'.format(inverso))
+'''
+#sem 'for'
+'''
+frase = str(input('Digite uma frase: ')).strip().upper() ##remove espaços e deixa maiusculo
+palavras = frase.split()                                 ##separa palavras
+junto = ''.join(palavras)                                ##junta palavras (ao separar e juntar, remove espaços entre palavras
+inverso = junto[::-1]
+if inverso == junto:
+    print('É palíndromo!')
+else:
+    print('Não é palíndromo.')
+print('Voce digitou a frase: {}'.format(inverso))
+'''
 
+#exercicio 54
 
