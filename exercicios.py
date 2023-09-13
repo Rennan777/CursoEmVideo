@@ -597,7 +597,7 @@ else:
     print('Não é palíndromo.')
 print('Voce digitou a frase: {}'.format(inverso))
 '''
-#sem 'for'
+        #sem 'for'
 '''
 frase = str(input('Digite uma frase: ')).strip().upper() ##remove espaços e deixa maiusculo
 palavras = frase.split()                                 ##separa palavras
@@ -611,4 +611,18 @@ print('Voce digitou a frase: {}'.format(inverso))
 '''
 
 #exercicio 54
+'''
+from datetime import date
+anocorrente = date.today().year
+maior = 0
+menor = 0
+for pessoa in range(1,8):
+    ano = int(input('Em que ano a {}a pessoa nasceu? '.format(pessoa)))
+    if anocorrente - ano < 18:
+        menor += 1
+    else:
+        maior += 1
+print('{} pessoas são maiores de idade e {} são menores.'.format(maior, menor))
+'''
 
+#exercicio 55
