@@ -626,3 +626,44 @@ print('{} pessoas são maiores de idade e {} são menores.'.format(maior, menor)
 '''
 
 #exercicio 55
+'''
+maior = 0
+menor = 0
+for pessoa in range(1,6):
+    peso = float(input('Digite o peso da {}a pessoa: '.format(pessoa)))
+    if pessoa == 1:
+        maior = peso
+        menor = peso
+    else:
+        if peso > maior:
+            maior = peso
+        elif peso < menor:
+            menor = peso
+print('maior {}, menor {}'.format(maior, menor))
+'''
+
+#exercicio 56
+'''
+idades = 0
+idadehomem = 0
+velho = ''
+menor20 = 0
+for pessoa in range(1,5):
+    nome = str(input('Digite o nome da {}a pessoa: '.format(pessoa)))
+    idade = int(input('Digite a idade da {}a pessoa: '.format(pessoa)))
+    sexo = str(input('Digite o sexo da {}a pessoa (M/F): '.format(pessoa))).strip()
+    idades += idade
+    if pessoa == 1 and sexo in 'Mm':
+        idadehomem = idade
+        velho = nome
+    elif sexo in 'Mm' and idade > idadehomem:
+        idadehomem = idade
+        velho = nome
+    elif sexo in 'Ff' and idade < 20:
+        menor20 += 1
+mediaidades = idades / 4
+print('A media das idades é de {}.'.format(mediaidades))
+print('O homem mais velho tem {} anos e se chama {}.'.format(idadehomem, velho))
+print('Tem {} mulheres menores de 20 anos'.format(menor20))
+'''
+
