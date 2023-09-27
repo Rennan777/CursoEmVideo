@@ -667,3 +667,26 @@ print('O homem mais velho tem {} anos e se chama {}.'.format(idadehomem, velho))
 print('Tem {} mulheres menores de 20 anos'.format(menor20))
 '''
 
+#exercicio 57
+'''
+sex = str(input('Digite seu sexo [M/F]: ')).strip().upper()
+opc = ['M', 'F']
+while sex not in opc:
+    sex = str(input('Opção invalida. Digite seu sexo [M/F]: ')).upper()
+if sex == 'M':
+    print('Voce selecionou MASCULINO')
+else:
+    print('Voce selecionou FEMININO')
+'''
+'''
+sex = str(input('Digite seu sexo [M/F]: ')).strip().upper()
+while sex not in 'mMfF':
+    sex = str(input('Opção invalida. Digite seu sexo [M/F]: ')).strip().upper()
+if sex == 'M':
+    print('Voce selecionou MASCULINO')
+else:
+    print('Voce selecionou FEMININO')
+'''
+
+#exercicio 58
+
