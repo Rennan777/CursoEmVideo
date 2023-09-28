@@ -689,4 +689,22 @@ else:
 '''
 
 #exercicio 58
+'''
+from random import randint
+numpc = randint(0,10)
+tenta = 0
+print('***' * 15)
+print('Adivinhe o numero o aleatorio (0 a 5).')
+print(('***' * 15))
+numuser = int(input('Qual seu palpite? '))
+while numuser != numpc:
+    if numuser < numpc:
+        numuser = int(input('Voce disse {}. Um pouco mais alto.. Outro palpite? '.format(numuser)))
+    else:
+        numuser = int(input('Voce disse {}. Um pouco mais baixo.. Outro palpite? '.format(numuser)))
+    tenta += 1
+print('Voce disse {}. Acertou em {} tentativas!'.format(numuser, tenta))
+'''
+
+#exercicio 59
 
