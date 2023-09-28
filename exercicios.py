@@ -707,4 +707,38 @@ print('Voce disse {}. Acertou em {} tentativas!'.format(numuser, tenta))
 '''
 
 #exercicio 59
+'''
+n1 = int(input('Digite o primeiro valor: '))
+n2 = int(input('Digite o segundo valor: '))
+opc = 0
+while opc != 5:
+    print('1 - Somar')
+    print('2 - Multiplicar')
+    print('3 - Maior')
+    print('4 - Novos numeros')
+    print('5 - Sair')
+    opc = int(input('>>>Selecione a opção: '))
+    if opc == 1:
+        print('A soma de {} + {} é de {}'.format(n1, n2, n1+n2))
+    elif opc == 2:
+        print('O produto de {} x {} é de {}'.format(n1, n2, n1*n2))
+    elif opc == 3:
+        if n1 == n2:
+            print('Os numeros são iguais ({})'.format(n1))
+        elif n1 > n2:
+            print('O {} é maior que {}'.format(n1, n2))
+        else:
+            print('O {} é maior que {}'.format(n2, n1))
+    elif opc == 4:
+        n1 = int(input('Digite o primeiro valor: '))
+        n2 = int(input('Digite o segundo valor: '))
+    elif opc == 5:
+        print('Até mais.')
+    else:
+        print('Opção invalida. Tente novamente.')
+print('Fim.')
+'''
 
+#exercicio 60
+
+num = int(input('Digite o numero para descobrir o fatorial: '))
