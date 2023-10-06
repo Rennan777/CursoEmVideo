@@ -740,5 +740,240 @@ print('Fim.')
 '''
 
 #exercicio 60
-
+'''
+numx = 1
 num = int(input('Digite o numero para descobrir o fatorial: '))
+print('Calculo {}! = '.format(num),end='')
+while num > 0:
+    print(num, end='')
+    print(' x ' if num > 1 else ' = ', end='')
+    numx *= num
+    num -= 1
+print(numx)
+'''
+'''
+from math import factorial
+num = int(input('Digite o numero para descobrir o fatorial: '))
+f = factorial(num)
+print('O fatorial de {} é {}.'.format(num, f))
+'''
+
+#exercicio 61
+'''
+primeiro = int(input('Primeiro termo: '))
+razao = int(input('Razão PA: '))
+termo = primeiro
+cont = 1
+while cont <= 10:
+    print('{} - '.format(termo),end='')
+    termo += razao
+    cont += 1
+print('Fim')
+'''
+
+#exercicio 62
+'''
+primeiro = int(input('Primeiro termo: '))
+razao = int(input('Razao: '))
+termo = primeiro
+cont = 1
+total = 0
+mais = 10
+while mais != 0:
+    total = total + mais
+    while cont <= total:
+        print('{} - '.format(termo), end='')
+        termo += razao
+        cont += 1
+    print('PAUSA')
+    mais = int(input('Mostrar mais quantos termos? '))
+print('Progressão finalizada com {} termos mostrados'.format(total))
+'''
+
+#exercicio 63
+'''
+n = int(input('Quantos termos voce quer mostrar? '))
+t1 = 0
+t2 = 1
+print('{} - {}'.format(t1, t2), end='')
+cont = 3
+while cont <= n:
+    t3 = t1 + t2
+    print(' - {}'.format(t3), end='')
+    t1 = t2
+    t2 = t3
+    cont += 1
+print(' - Fim')
+'''
+
+#exercicio 64
+'''
+cont = 0
+total = 0
+num = int(input('Digite um valor: [999 para sair]: '))
+while num != 999:
+    total += num
+    cont += 1
+    num = int(input('Digite um valor: [999 para sair]: '))
+print('Foram digitados {} numeros e a soma de todos é de {}'.format(cont, total))
+'''
+
+#exercicio 65
+'''
+r = 'S'
+cont = 0
+soma = 0
+maior = 0
+menor = 0
+while r in 'Ss':
+    num = int(input('Digite um numero: '))
+    cont += 1
+    soma += num
+    if cont == 1:
+        maior = num
+        menor = num
+    else:
+        if num > maior:
+            maior = num
+        elif num < menor:
+            menor = num
+    r = str(input('Continuar? [S/N]')).upper().strip()[0]
+media = soma / cont
+print('Foram digitados {} numeros. A media é de {}, o menor foi {} e o maior foi {}.'.format(cont, media, menor, maior))
+'''
+
+#exercicio 66
+#break
+'''
+cont = 0
+soma = 0
+while True:
+    valor = int(input('Digite um valor: [999 Sair] '))
+    if valor == 999:
+        break
+    cont += 1
+    soma += valor
+print(f'Foram digitados {cont} e o a soma total é de {soma}')
+'''
+
+#exercicio 67
+'''
+while True:
+    print('--' * 10)
+    num = int(input('Tabuada de: [Negativo para finalizar] '))
+    if num < 0:
+        break
+    for t in range(1, 11):
+        prod = t * num
+        print(f'{num} x {t} = {prod}')
+print('Finalizado')
+'''
+
+#exercicio 68
+'''
+from random import randint
+cont = 0
+while True:
+    pc = randint(1, 10)
+    jog = int(input('Digite um numero: '))
+    tot = (pc + jog)
+    if tot % 2 == 0:
+        game = 'PAR'
+    else:
+        game = 'IMPAR'
+    escolha = str(input('Par ou Impar? [P/I] ')).strip().upper()[0]
+    if escolha == 'I' and game == 'IMPAR':
+        cont += 1
+        print(f'Voce jogou {jog} e o pc jogou {pc}. Total {tot}. Deu IMPAR. Voce GANHOU.')
+    elif escolha == 'P' and game == 'PAR':
+        cont += 1
+        print(f'Voce jogou {jog} e o pc jogou {pc}. Total {tot}. Deu PAR. Voce GANHOU.')
+    else:
+        print(f'Voce jogou {jog} e o pc jogou {pc}. Total {tot}. Deu {game}')
+        print('PERDEU')
+        break
+print(f'Fim do jogo! Voce venceu {cont} vezes.')
+'''
+
+#exercicio 69
+'''
+mais18 = 0
+homem = 0
+mulher20 = 0
+while True:
+    sex = str(input('Qual o sexo: [H/M]')).strip().upper()[0]
+    if sex in 'HM':
+        idade = int(input('Qual a idade: '))
+        if idade > 18:
+            mais18 += 1
+        if sex in 'Hh':
+            homem += 1
+        if sex in 'Mm' and idade < 20:
+            mulher20 += 1
+        continua = str(input('Continuar? [S/N]')).upper().strip()[0]
+        if continua == 'N':
+            print('Saindo.')
+            break
+    else:
+        print('Escolha Invalida. Tente novamente')
+print(f'Fim do programa. {mais18} pessoas tem mais de 18 anos. {homem} são homens. {mulher20} mulher(es) tem menos de 20 anos.')
+'''
+'''
+mais18 = 0
+homem = 0
+mulher20 = 0
+while True:
+    sex = ' '
+    while sex not in 'HM':      #adicionado while curso, para testar resposta certa
+        sex = str(input('Qual o sexo: [H/M]')).strip().upper()[0]
+    if sex in 'HM':
+        idade = int(input('Qual a idade: '))
+        if idade > 18:
+            mais18 += 1
+        if sex in 'H':
+            homem += 1
+        if sex in 'M' and idade < 20:
+            mulher20 += 1
+        continua = ' '
+        while continua not in 'SN': #adicionado while curso, para testar resposta certa
+            continua = str(input('Continuar? [S/N]')).upper().strip()[0]
+        if continua == 'N':
+            print('Saindo.')
+            break
+    else:
+        print('Escolha Invalida. Tente novamente')
+print(f'Fim do programa. {mais18} pessoas tem mais de 18 anos. {homem} são homens. {mulher20} mulher(es) tem menos de 20 anos.')
+'''
+
+#exercicio 70
+'''
+total = 0
+mais1k = 0
+barato = ''
+pbarato = 0
+while True:
+    produto = str(input('Digite o nome do produto: '))
+    preco = float(input('Digite o valor do produto: '))
+    total += preco
+    if preco > 1000:
+        mais1k += 1
+    if barato == '':
+        barato = produto
+        pbarato = preco
+    if preco < pbarato:
+        pbarato = preco
+        barato = produto
+    continua = ' '
+    while continua not in 'SN':
+        continua = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+    if continua == 'N':
+        print('Finalizando.')
+        break
+print(f'O total da compra foi de R${total:.2f}, {mais1k} produtos valem mais de R$ 1000. O produto mais barato é {barato}.')
+'''
+
+#exercicio 71
+
+saque = int(input('Qual valor a ser sacado: '))
+
+
