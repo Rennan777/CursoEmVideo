@@ -995,3 +995,46 @@ while True:
             break
 print('Finalizado')
 '''
+
+#exercicio 72
+'''
+nums = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
+        'onze', 'doze', 'treza', 'quatorze', 'quinze', 'dezesseis', 'dezesete', 'dezoito', 'dezenove', 'vinte')
+continua = 'S'
+while continua == 'S':
+    escolha = int(input('Digite um numero de 0 a 20: '))
+    while escolha < 0 or escolha > 20:
+        print('Numero invalido.')
+        escolha = int(input('Digite um numero de 0 a 20: '))
+    print(f'numero digitado foi', nums[escolha])
+    continua = str(input('Deseja continuar? [S/N]')).strip().upper()[0]
+    while continua not in 'SN':
+        print('Escolha invalida.')
+        continua = str(input('Deseja continuar? [S/N]')).strip().upper()[0]
+    if continua == 'N':
+        break
+print('Fim')
+'''
+
+#exercicio 73
+'''
+times = ('Botafogo', 'Red Bull Bragantino', 'Grêmio',
+         'Palmeiras', 'Flamengo', 'Fortaleza', 'Fluminense',
+         'Athletico-PR', 'Atlético-MG', 'São Paulo', 'Cuiabá',
+         'Inter', 'Corinthians', 'Santos', 'Cruzeiro', 'Bahia',
+         'Vasco', 'Goiás', 'Coritiba', 'América-MG')
+print('==' * 15)
+print('Os 20 times são: ', times)
+print('==' * 15)
+print('Os 5 primeiros colocados são: ', times[:5])
+print('==' * 15)
+print('Os cinco ultimos colocados são: ', times[-4:])
+print('==' * 15)
+print('Os times em ordem alfabetica: ', sorted(times))
+print('==' * 15)
+print('Goiás esta na posição: ', times.index('Goiás')+1)
+print('==' * 15)
+'''
+
+#exercicio 74
+
