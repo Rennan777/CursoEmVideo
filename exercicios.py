@@ -83,6 +83,8 @@ num = float(input('Digite um numero real! '))
 print(trunc(num))
 
 '''
+#import random
+
 #from time import sleep
 
 # import math
@@ -1037,4 +1039,58 @@ print('==' * 15)
 '''
 
 #exercicio 74
+'''
+from random import randint
+nums = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
+for n in nums:
+    print(n, end='')
+print(f'\nO maior valor é: {max(nums)}')
+print(f'O menor valor é: {min(nums)}')
+'''
+
+#exercicio 75
+'''
+nums = (int(input('Digite um numero: ')),
+        int(input('Digite outro numero: ')),
+        int(input('Digite mais um numero: ')),
+        int(input('Digite o ultimo numero: ')))
+nove = nums.count(9)
+print(f'Voce digitou os seguintes numeros: {nums}')
+print(f'O numero 9 se repete {nove} vezes.')
+if 3 in nums:
+    tres = nums.index(3)
+    print(f'O numero 3 aparece pela primeira vez na posição {tres + 1}')
+else:
+    print('O valor 3 não foi digitado em nenhuma posição.')
+print('Os Valores pares são: ', end='')
+for n in nums:
+    if n % 2 == 0:
+        print(f'{n}', end=' ')
+print('\nFim')
+'''
+
+#exercicio 76
+'''
+lista = ('Lapis', 1.75,
+         'Borracha', 2,
+         'Caderno', 15.90,
+         'Estojo', 25,
+         'Transferidor', 4.20,
+         'Compasso', 9.99,
+         'Mochila', 120.32,
+         'Canetas', 22.30,
+         'Livro', 34.90)
+print('-' * 40)
+print(f'{"LISTAGEM DE PREÇOS":^40}')
+print('-' * 40)
+for i in range(0, len(lista)):
+    if i % 2 == 0:
+        print(f'{lista[i]:.<30}', end='')
+    else:
+        print(f'R${lista[i]:>7.2f}')
+print('-' * 40)
+'''
+
+#exercicio 77
+
 
