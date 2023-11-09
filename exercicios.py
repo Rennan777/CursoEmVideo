@@ -1092,5 +1092,16 @@ print('-' * 40)
 '''
 
 #exercicio 77
+'''
+tupla = ('Abacate', 'Teclado', 'Copo', 'Mesa', 'Arroz', 'Chafariz', 'Carro', 'Porta')
+indice = 'AEIOUaeiou'
+for palavra in tupla:
+        print(f'\nA palavra {palavra} tem: ', end='')
+        for vogal in palavra:
+            if vogal in indice:
+                print(vogal, end=' ')
+'''
+
+#exercicio 78
 
 
