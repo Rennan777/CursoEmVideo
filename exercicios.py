@@ -1103,5 +1103,57 @@ for palavra in tupla:
 '''
 
 #exercicio 78
+'''
+lista = []
+for c in range (0, 5):
+    n = int(input(f'Digite um valor para posição {c}: '))
+    lista.append(n)
+print(f'Voce digitou os numeros: {lista}')
+maior = max(lista)
+menor = min(lista)
+print(f'O maior valor é {maior} e está nas posições: ', end='')
+for i, v in enumerate(lista):
+    if v == maior:
+        print(f'{i}... ', end='')
+print(f'\nO menor numero é {menor} e está nas posições: ', end='')
+for i, v in enumerate(lista):
+    if v == menor:
+        print(f'{i}... ', end='')
+'''
 
+#exercicio 79
+'''
+r = 'S'
+lista = list()
+while r in 'S':
+    n = int(input('Digite um valor: '))
+    if n not in lista:
+        lista.append(n)
+    else:
+        print('Valor ja foi incluido.')
+    r = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+    while r not in 'SN':
+        print('Escolha invalida')
+        r = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+print(f'Valores digitados: {sorted(lista)}')
+'''
+
+#exercicio 80
+'''
+lista = list()
+for c in range(0, 5):
+    n = int(input('Digite um valor: '))
+    if c == 0 or n > lista[-1]:
+        lista.append(n)
+    else:
+        pos = 0
+        while pos <len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                break
+            pos += 1
+print(f'Valores digitados: {lista}')
+'''
+
+#exercicio 81
 
