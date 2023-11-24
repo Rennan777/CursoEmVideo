@@ -1156,4 +1156,24 @@ print(f'Valores digitados: {lista}')
 '''
 
 #exercicio 81
+'''
+r = 'S'
+c = 0
+lista = []
+while r == 'S':
+    n = int(input('Digite um valor: '))
+    lista.append(n)
+    c += 1
+    r = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+    while r not in 'SN':
+        print('Resposta invalida.')
+        r = str(input('Deseja continuar: [S/N]')).strip().upper()[0]
+print(f'Foram digitados {c} numeros.')
+print(f'Lista ordenada decrescente: {sorted(lista, reverse=True)}')
+if 5 in lista:
+    print('O numero 5 está na lista.')
+else:
+    print('O numero 5 não está na lista')
+'''
 
+#exercicio 82
