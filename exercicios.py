@@ -1192,4 +1192,56 @@ else:
     print('O valor 5 não está na lista.')
 '''
 #exercicio 82
+'''
+lista = []
+par = []
+impar = []
+while True:
+    n = int(input('Digite um valor: '))
+    lista.append(n)
+    if n % 2 == 0:
+        par.append(n)
+    else:
+        impar.append(n)
+    resp = str(input('Deseja continuar? [S/N] '))
+    if resp in 'Nn':
+        break
+print(f'Sua lista: {lista}')
+print(f'Pares: {sorted(par)}')
+print(f'Impares: {sorted(impar)}')
+'''
+#exercicio 83
+'''
+abre = 0
+fecha = 0
+exp = str(input('Digite sua expressao: '))
+for i in exp:
+    if i == '(':
+        abre += 1
+    elif i == ')':
+        fecha += 1
+print(f'Sua expressao: {exp}')
+if abre == fecha:
+    print('Sua expressao esta correta')
+else:
+    print('Sua expressao tem um problema')
+'''
 
+'''
+expr = str(input('Digite a expressão: '))
+pilha = []
+for simb in expr:
+    if simb == '(':
+        pilha. append ('(')
+    elif simb == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha. append(') ')
+            break
+if len(pilha) == 0:
+    print('Sua expressão está válida!')
+else:
+    print('Sua expressão está errada!')
+'''
+#exercicio 84
