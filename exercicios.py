@@ -1246,3 +1246,32 @@ else:
 '''
 #exercicio 84
 
+geral = list()
+pessoa = list()
+maior = menor = 0
+while True:
+    pessoa.append(str(input('Digite o nome: ')))
+    pessoa.append(float(input('Digite o peso: ')))
+    if len(geral) == 0:
+        maior = menor = pessoa[1]
+    else:
+        if pessoa[1] > maior:
+            maior = pessoa[1]
+        if pessoa[1] < menor:
+            menor = pessoa[1]
+    geral.append(pessoa[:])
+    pessoa.clear()
+    continuar = str(input('Deseja inserir mais pessoas: [S/N]'))
+    if continuar in 'Nn':
+        break
+print(f'Foram cadastradas {len(geral)} pessoas.')
+print(f'O maior peso foi de {maior}Kg. Peso de ', end='')
+for p in geral:
+    if p[1] == maior:
+        print(f'[{p[0]}] ', end='')
+print()
+print(f'O menor peso foi de {menor}Kg. Peso de ', end='')
+for p in geral:
+    if p[1] == menor:
+        print(f'[{p[0]}] ', end='')
+print()
