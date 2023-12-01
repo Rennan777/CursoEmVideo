@@ -1245,7 +1245,7 @@ else:
     print('Sua expressão está errada!')
 '''
 #exercicio 84
-
+'''
 geral = list()
 pessoa = list()
 maior = menor = 0
@@ -1275,3 +1275,7 @@ for p in geral:
     if p[1] == menor:
         print(f'[{p[0]}] ', end='')
 print()
+
+'''
+
+#exercicio 85
