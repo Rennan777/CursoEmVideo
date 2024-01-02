@@ -1279,3 +1279,94 @@ print()
 '''
 
 #exercicio 85
+'''
+listpar = list()
+listimpar = list()
+lista = [listpar, listimpar]
+for x in range(7):
+    n = int(input(f'Digite o {x + 1}o valor: '))
+    if n % 2 == 0:
+        listpar.append(n)
+    else:
+        listimpar.append(n)
+print(f'Pares: {sorted(listpar)}')
+print(f'Impares: {sorted(listimpar)}')
+'''
+
+#exercicio 86
+'''
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for linha in range(3):
+    for coluna in range(3):
+        matriz[linha][coluna] = int(input(f'Digite um valor para [{linha}, {coluna}]: '))
+print('*=' * 10)
+for linha in range(3):
+    for coluna in range(3):
+        print(f'[{matriz[linha][coluna]:^5}]', end='')
+    print()
+'''
+
+#exercicio 87
+'''
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+pares = 0
+terceira = 0
+maior = 0
+
+for linha in range(3):
+    for coluna in range(3):
+        x = int(input(f'Digite um valor para {linha}, {coluna}: '))
+        maior = x
+        matriz[linha][coluna] = x
+        if x % 2 == 0:
+            pares += x
+#soma terceira coluna
+for linha in range(3):
+    terceira += matriz[linha][2]
+#maior segunda linha
+for coluna in range(3):
+    if coluna == 0:
+        maior = matriz[1][coluna]
+    elif matriz[1][coluna] > maior:
+        maior = matriz[1][coluna]
+
+print('*=' * 15)
+for linha in range(3):
+    for coluna in range(3):
+        print(f'[{matriz[linha][coluna]:^5}]', end='')
+    print()
+print('*=' * 15)
+print(f'A soma dos valores pares é de: {pares}')
+print(f'A soma dos valores da terceira coluna é: {terceira}')
+print(f'O maior valor da segunda linha é: {maior}')
+'''
+
+#exercicio 88
+'''
+from random import randint
+from time import sleep
+listao = list()
+
+qtd = int(input('Quantos jogos? '))
+
+for jogo in range(qtd):
+    lista = []
+    cont = 0
+    while True:
+        num = randint(1,60)
+        if num not in lista:
+            lista.append(num)
+            cont += 1
+        if cont >= 6:
+            break
+    listao.append(lista)
+
+for i, l in enumerate(listao):
+    print(f'{i + 1}o jogo: {sorted(l)}')
+    sleep(1)
+print('Fim')
+'''
+
+#exercicio 89
+
+
