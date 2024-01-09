@@ -1368,5 +1368,37 @@ print('Fim')
 '''
 
 #exercicio 89
+'''
+alunos = list()
+continua = 'S'
 
+print('** Digite o nome e 2 notas dos alunos. **')
+while continua in 'Ss':
+    aluno = list()
+    aluno.append(str(input('Nome: ')))
+    aluno.append(float(input('Nota 1: ')))
+    aluno.append(float(input('Nota 2: ')))
+    alunos.append(aluno)
+    continua = str(input('Deseja continuar? [S/N]'))[0]
+
+print('**' * 15)
+print('No. NOME      MEDIA')
+print('--' * 10)
+for i, a in enumerate(alunos):
+    print(f'{i:<2} {a[0]:<10} {(a[1] + a[2]) / 2:>5.2f}')
+print('--' * 10)
+while True:
+    notas = int(input('Exibir notas de qual aluno? (999 para sair): '))
+    if notas == 999:
+        print('Programa Finalizado')
+        break
+    else:
+        if notas < len(alunos):
+            print(f'Notas de {alunos[notas][0]}: {alunos[notas][1]}, {alunos[notas][2]}')
+            print('--' * 11)
+        else:
+            print('Digite um numero de aluno valido')
+'''
+
+#exercicio 90
 
