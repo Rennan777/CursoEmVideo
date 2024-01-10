@@ -1460,4 +1460,44 @@ for k, v in pessoa.items():
 '''
 
 #exercicio 93
+'''
+jogador = dict()
+jogador['nome jogador'] = str(input('Nome do jogador: '))
+jogador['total_partidas'] = int(input('Quantidade de partidas jogadas: '))
+golstotais = 0
+for partida in range(1, jogador['total_partidas'] + 1):
+    golpartida = int(input(f'Quantos gols na partida {partida}? '))
+    jogador[f'partida{partida}'] = golpartida
+    golstotais += golpartida
+jogador['total de gols'] = golstotais
+for k, v in jogador.items():
+    print(f'{k} = {v}')
+    
+#############################
+
+jogador = {}
+jogador['nome'] = str(input('Nome do jogador: '))
+jogador['partidas'] = int(input('Quantidade de partidas jogadas: '))
+gols = []
+total_gols = 0
+for partida in range(1, jogador['partidas'] + 1):
+    tot_partida = int(input(f'Quantos gols na partida {partida}? '))
+    gols.append(tot_partida)
+    total_gols += tot_partida
+jogador['gols'] = gols
+jogador['total'] = total_gols
+print('=-' * 15)
+print(jogador)
+print('=-' * 15)
+for k, v in jogador.items():
+    print(f'O campo {k} tem o valor {v}')
+print('=-' * 15)
+print(f'O jogador {jogador["nome"]}, jogou {jogador["partidas"]} partidas')
+for i, g in enumerate(jogador['gols']):
+    print(f'Na partida {i + 1}, o jogador fez {g} gols.')
+print(f'Foi um total de {jogador["total"]} gols.')
+
+'''
+
+#exercicio 94
 
