@@ -1440,3 +1440,24 @@ for i, v in enumerate(rank):
 '''
 
 #exercicio 92
+'''
+from datetime import date #datetime
+#hoje = datetime.now().year
+hoje = date.today()
+anoatual = hoje.year
+pessoa = dict()
+pessoa['nome'] = str(input('Nome: '))
+pessoa['nascimento'] = int(input('Ano de nascimento: '))
+pessoa['idade'] = anoatual - pessoa['nascimento']
+if pessoa['idade'] >= 18:
+    pessoa['ctps'] = int(input('CTPS (0 para nao possui): '))
+    if pessoa['ctps'] != 0:
+        pessoa['contratacao'] = int(input('Ano de contratação: '))
+        pessoa['salario'] = float(input('Salário: '))
+        pessoa['aposentadoria'] =  (35 - (anoatual - pessoa['contratacao'])) + pessoa['idade']
+for k, v in pessoa.items():
+    print(f'- {k} é {v}')
+'''
+
+#exercicio 93
+
