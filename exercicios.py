@@ -1500,4 +1500,41 @@ print(f'Foi um total de {jogador["total"]} gols.')
 '''
 
 #exercicio 94
+'''
+pessoas = []
+continuar = 'S'
+while 'S' in continuar:
+    pessoa = {}
+    pessoa['nome'] = str(input('Digite o nome: '))
+    while True:
+        pessoa['sexo'] = str(input('Digite o sexo [M/F]: ')).upper()[0]
+        if pessoa['sexo'] in 'MF':
+            break
+        print('Favor, digite somente [M ou F]:')
+    pessoa['idade'] = int(input('Digite a idade: '))
+    pessoas.append(pessoa)
+    while True:
+        continuar = str(input('Deseja adicionar outra pessoa? [S/N]')).upper()[0]
+        if continuar in 'SN':
+            break
+        print('Favor selecionar opção correta. [S/N]')
+print('-=-=' * 10)
+print(f'{len(pessoas)} pessoas foram cadastradas.')
+totidades = 0
+for i in pessoas:
+    totidades += i['idade']
+mediaidade = (totidades / len(pessoas))
+print(f'A media das idades é {mediaidade:.0f}.')
+print(f'As mulheres são: ', end='')
+for i in pessoas:
+    if i['sexo'] == 'F':
+        print(f'{i["nome"]}, ', end='')
+print()
+print(f'As pessoas com idade acima da media são: ', end='')
+for i in pessoas:
+    if i['idade'] > mediaidade:
+        print(f'{i["nome"]}, com {i["idade"]} anos. ', end='')
+print('-=-=' * 10)
+'''
 
+#exercicio 95
