@@ -1538,3 +1538,51 @@ print('-=-=' * 10)
 '''
 
 #exercicio 95
+'''
+jogadores = []
+continuar = 'S'
+while continuar == 'S':
+    jogador = {}
+    jogador['nome'] = str(input('Nome do jogador: '))
+    jogador['partidas'] = int(input('Quantidade de partidas jogadas: '))
+    gols = []
+    total_gols = 0
+    for partida in range(1, jogador['partidas'] + 1):
+        tot_partida = int(input(f'Quantos gols na partida {partida}? '))
+        gols.append(tot_partida)
+        total_gols += tot_partida
+    jogador['gols'] = gols
+    jogador['total'] = total_gols
+    jogadores.append(jogador)
+    while True:
+        continuar = str(input('Deseja adicionar outra pessoa? [S/N]')).upper()[0]
+        if continuar in 'SN':
+            break
+        print('Favor selecionar opção correta. [S/N]')
+
+print('=-' * 15)
+print('cod   ', end='')
+for i in jogadores[0].keys():
+    print(f'{i:<15}', end='')
+print()
+for i, j in enumerate(jogadores):
+    print(f'{i:<5} ', end='')
+    for d in j.values():
+        print(f'{str(d):<15}', end='')
+    print()
+print('=-' * 15)
+
+while True:
+    exibir = int(input('Exibir dados de qual jogador? [999 para encerrar] '))
+    if exibir == 999:
+        break
+    elif exibir > len(jogadores) or exibir < 0:
+        print('Valor invalido')
+    else:
+        print(f'-- Dados do jogador {jogadores[exibir]["nome"]}: ')
+        for i, g in enumerate(jogadores[exibir]['gols']):
+            print(f'--- No jogo {i + 1} fez {g} gols.')
+    print('=-' * 15)
+print('Encerrando...')
+'''
+
