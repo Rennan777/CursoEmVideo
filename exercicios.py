@@ -1600,3 +1600,12 @@ area(l, c)
 
 #exercicio 97
 
+def escreva(frase):
+    tamanho = len(frase) + 4
+    print('~' * tamanho)
+    print(f'  {frase}  ')
+    print('~' * tamanho)
+
+
+f = str(input('Digite sua frase: '))
+escreva(f)
