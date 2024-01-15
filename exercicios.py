@@ -1586,4 +1586,17 @@ while True:
 print('Encerrando...')
 '''
 
- 
+ #exercicio 96
+'''
+def area(largura, comprimento):
+    area = largura * comprimento
+    print(f'A área de um terreno {largura}x{comprimento} é de {area} metros quadrados.')
+
+
+l = float(input('Largura (m): '))
+c = float(input('Comprimento (m): '))
+area(l, c)
+'''
+
+#exercicio 97
+
