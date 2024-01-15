@@ -1599,7 +1599,7 @@ area(l, c)
 '''
 
 #exercicio 97
-
+'''
 def escreva(frase):
     tamanho = len(frase) + 4
     print('~' * tamanho)
@@ -1609,3 +1609,47 @@ def escreva(frase):
 
 f = str(input('Digite sua frase: '))
 escreva(f)
+'''
+
+#exercicio 98
+'''
+from time import sleep
+
+
+def contador(inicio, fim, passo):
+    print(f'Contagem de {inicio} a {fim} de {passo} em {passo}: ')
+    if passo < 0:
+        passo *= -1
+    if passo == 0:
+        passo = 1
+    if inicio < fim:
+        cont = inicio
+        while cont <= fim:
+            print(f'{cont} ', end='')
+            cont += passo
+            sleep(0.5)
+        print('Fim')
+    else:
+        cont = inicio
+        while cont >= fim:
+            print(f'{cont} ', end='')#
+            cont -= passo
+            sleep(0.5)
+        print('Fim')
+
+def espaco():
+    print('=-' * 20)
+
+espaco()
+contador(1, 10, 1)
+espaco()
+contador(10, 0, 2)
+espaco()
+print('Contagem personalizada')
+i = int(input('Digite o numero inicial: '))
+f = int(input('Digite o numero final: '))
+p = int(input('Digite o passo: '))
+contador(i, f, p)
+'''
+
+#exercicio 99
