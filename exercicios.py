@@ -1617,11 +1617,11 @@ from time import sleep
 
 
 def contador(inicio, fim, passo):
-    print(f'Contagem de {inicio} a {fim} de {passo} em {passo}: ')
     if passo < 0:
         passo *= -1
     if passo == 0:
         passo = 1
+    print(f'Contagem de {inicio} a {fim} de {passo} em {passo}: ')
     if inicio < fim:
         cont = inicio
         while cont <= fim:
