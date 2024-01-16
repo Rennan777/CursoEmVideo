@@ -1653,3 +1653,41 @@ contador(i, f, p)
 '''
 
 #exercicio 99
+'''
+from time import sleep
+
+def espaco():
+    print('=-' * 20)
+
+
+def maior(* valores):
+    espaco()
+    print('Analisando os valores passados...')
+    m = 0
+    cont = 0
+    for i, valor in enumerate(valores):
+        sleep(0.5)
+        print(f'{valor} ', end='')
+        if i == 0:
+            m = valor
+        else:
+            if valor > m:
+                m = valor
+        cont += 1
+    sleep(0.5)
+    print(f'\nForam passados {cont} valores ao todo')
+    sleep(0.5)
+    print(f'O maior valor foi {m}.')
+
+
+maior(5, 7, 4, 7, 9, 8, 3)
+maior(1, 5, 8, 7, 10, 5)
+maior(1, 2)
+maior(0)
+maior(6)
+maior()
+espaco()
+'''
+
+#exercicio 100
+
