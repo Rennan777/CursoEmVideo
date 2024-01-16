@@ -83,9 +83,9 @@ num = float(input('Digite um numero real! '))
 print(trunc(num))
 
 '''
-#import random
+# import random
 
-#from time import sleep
+# from time import sleep
 
 # import math
 
@@ -124,7 +124,7 @@ alu = choice(lista)
 print('O aluno sorteado foi {}!'.format(alu))
 '''
 
-#exercicio 20
+# exercicio 20
 '''
 from random import shuffle
 a1 = input('primeiro aluno: ')
@@ -136,7 +136,7 @@ shuffle(lista)
 print(lista)
 '''
 
-#exercicio 21
+# exercicio 21
 '''
 import pygame
 pygame.init()
@@ -145,7 +145,7 @@ pygame.mixer.music.play()
 pygame.event.wait()
 '''
 
-#exercicio 22
+# exercicio 22
 '''
 nome = str(input('Digite seu nome completo: ')).strip #strip remove espaços antes e depois
 nomeint = ''.join(nome)
@@ -158,7 +158,7 @@ print('Seu nome completo tem {} caracteres.'.format(tamnome))
 print('Seu primeiro nome tem {} caracteres.'.format(tampnome))
 '''
 
-#exercicio 23
+# exercicio 23
 '''
 num = int(input('informe um numero: '))
 u = num // 1 % 10
@@ -172,13 +172,13 @@ print('Centena: {}'.format(c))
 print('Milhar: {}'.format(m))
 '''
 
-#exercicio 24
+# exercicio 24
 '''
 cid = str(input('Em que cidade voce nasceu? ')).strip()
 print(cid[:5].upper() == 'SANTO')
 '''
 
-#exercicio 25
+# exercicio 25
 '''
 nome = str(input('Digite seu nome completo: ')).strip().upper()
 print('Seu nome tem Silva? {}'.format('SILVA' in nome))
@@ -191,7 +191,7 @@ else:
     print('Seu nome nao tem Silva')
 '''
 
-#exercicio 26
+# exercicio 26
 '''
 frase = str(input('Digite uma frase: ')).upper().strip()
 print('A letra A aparece {} vezes na frase.'.format(frase.count('A')))
@@ -199,7 +199,7 @@ print('A primeira aparição da letra A é na posição {}'.format(frase.find('A
 print('A ultima aparição da letra A é na posição {}'.format(frase.rfind('A')+1))
 '''
 
-#exercicio 27
+# exercicio 27
 '''
 nome = str(input('Digite seu nome completo: ')).strip()
 listnome = nome.split()
@@ -208,7 +208,7 @@ print('Seu ultimo nome é {}'.format(listnome[-1]))
 ## print('Seu ultimo nome é {}'.format(listnome[len(listnome)-1]))
 '''
 
-#exercicio 28
+# exercicio 28
 '''
 from random import randint
 from time import sleep
@@ -225,7 +225,7 @@ else:
     print('O numero que pensei foi {}. Voce errou.'.format(numpc))
 '''
 
-#exercicio 29
+# exercicio 29
 '''
 vel = float(input('Qual a velocidade do veiculo? '))
 multa = (vel-80)*7
@@ -235,7 +235,7 @@ else:
     print('Voce esta acima do limite de 80 km/h! Voce será multado em R$ {:.2f}'.format(multa))
 '''
 
-#exercicio 30
+# exercicio 30
 '''
 num = int(input('Me diga um numero qualquer: '))
 result = num % 2
@@ -245,7 +245,7 @@ else:
     print('O numero {} é IMPAR.'.format(num))
 '''
 
-#exercicio 31
+# exercicio 31
 '''
 dist = float(input('Qual a distancia da sua viagem? '))
 
@@ -257,7 +257,7 @@ else:
 #preco = dist * 0.45 if dist <= 200 else dist * 0.5
 print(('O preço da passagem é de R$ {:.2f}'.format(preco)))
 '''
-#exercicio 32
+# exercicio 32
 '''
 from datetime import date
 ano = int(input('Que ano quer analisar? Digite 0 para ano atual:'))
@@ -269,7 +269,7 @@ else:
     print('O ano {} NÃO é BISSEXTO.'.format(ano))
 '''
 
-#exercicio 33
+# exercicio 33
 '''
 a = int(input('Digite o 1o numero: '))
 b = int(input('Digite o 2o numero: '))
@@ -290,7 +290,7 @@ print('O menor valor digitado foi {}'.format(menor))
 print('O maior valor digitado foi {}'.format(maior))
 '''
 
-#exercicio 34
+# exercicio 34
 '''
 sal = float(input('Qual o salário do funcionário? '))
 if sal <= 1250:
@@ -300,7 +300,7 @@ else:
 print('O funcionário recebia R$ {:.2f}. O novo salário será de R$ {:.2f}'.format(sal, nsal))
 '''
 
-#exercicio 35
+# exercicio 35
 '''
 print('**' * 20)
 print('Analisador de triangulo')
@@ -314,7 +314,7 @@ else:
     print('O valores NÃO PODEM FORMAR triangulo.')
 '''
 
-#exercicio 36
+# exercicio 36
 '''
 print('##' * 20)
 print('####### SIMULADOR DE EMPRESTIMO #######')
@@ -332,7 +332,7 @@ else:
 print('######### FIM DA SIMULAÇÃO #########')
 '''
 
-#exercicio 37
+# exercicio 37
 '''
 print('####' * 10)
 print('##### CONVERSOR DE BASES #####')
@@ -350,7 +350,7 @@ else:
 print('##### FIM DA CONVERSÃO #####')
 '''
 
-#exercicio 38
+# exercicio 38
 '''
 n1 = int(input('Digite um numero inteiro: '))
 n2 = int(input('Digite mais um numero: '))
@@ -362,7 +362,7 @@ elif n1 == n2:
     print('Voce digitou {} nas duas vezes'.format(n1))
 '''
 
-#exercicio 39
+# exercicio 39
 '''
 from datetime import date
 anoatual = date.today().year
@@ -378,7 +378,7 @@ elif i < 18:
     print('Voce tem {} anos. Ainda não esta na hora de se alistar. Ainda faltam {} anos.'.format(i, t))
 '''
 
-#exercicio 40
+# exercicio 40
 '''
 n1 = float(input('D igite a primeira nota: '))
 n2 = float(input('Digite a segunda nota: '))
@@ -392,7 +392,7 @@ elif m >= 7:
     print('Status: APROVADO')
 '''
 
-#exercicio 41
+# exercicio 41
 '''
 from datetime import date
 atual = date.today().year
@@ -428,7 +428,7 @@ else:
     print('Os valores não podem formar triangulo.')
 '''
 
-#exercicio 43
+# exercicio 43
 '''
 p = float(input('Digite seu peso em quilos: '))
 a = float(input('Digite sua altura em metros: '))
@@ -446,7 +446,7 @@ else:
     print('Voce esta com obesidade morbida')
 '''
 
-#exercicio 44
+# exercicio 44
 '''
 print('{:=^40}'.format(' SIMULADOR DE PARCELAMENTO '))
 val = float(input('Digite o valor da compra: '))
@@ -472,7 +472,7 @@ else:
     print('Meio invalido.')
 '''
 
-#exercicio 45
+# exercicio 45
 '''
 from random import choice
 joga = str(input('Escolha pedra, papel ou tesoura?\n>>>> ')).upper()
@@ -501,7 +501,7 @@ else:
     print('VOCE PERDEU!! E o computador jogou {} no seu olho'.format(comp))
 '''
 
-#exercicio 46
+# exercicio 46
 '''
 from time import sleep
 for c in range(10, -1, -1):
@@ -510,7 +510,7 @@ for c in range(10, -1, -1):
 print('kabum!!!')
 '''
 
-#exercicio 47
+# exercicio 47
 '''
 for c in range(1, 51, 1):
     if c % 2 == 0:
@@ -523,7 +523,7 @@ for c in range(2, 51, 2):
 print('fim')
 '''
 
-#exercicio 48
+# exercicio 48
 '''
 soma = 0
 cont = 0
@@ -534,7 +534,7 @@ for c in range(1, 501, 2):
 print('A soma de todos os {} valores é de {}.'.format(cont, soma))
 '''
 
-#exercicio 49
+# exercicio 49
 '''
 n = int(input('Digite um numero inteiro: '))
 print('=*' * 8)
@@ -543,7 +543,7 @@ for c in range(1, 11):
 print('=*' * 8)
 '''
 
-#exercicio 50
+# exercicio 50
 '''
 s = 0
 cont = 0
@@ -555,7 +555,7 @@ for c in range(1, 7):
 print('voce informou {} valores pares e a soma deles é de {}'.format(cont, s))
 '''
 
-#exercicio 51
+# exercicio 51
 '''
 p = int(input('Digite o primeiro termo: '))
 r = int(input('Digite a razão: '))
@@ -566,7 +566,7 @@ for c in range(p, dec + r, r):
 print('Fim')
 '''
 
-#exercicio 52
+# exercicio 52
 '''
 num = int(input('Digite um numero: '))
 tot = 0
@@ -584,8 +584,8 @@ else:
     print('E por isso, NÃO é PRIMO')
 '''
 
-#exercicio 53
-#com 'for'
+# exercicio 53
+# com 'for'
 '''
 frase = str(input('Digite uma frase: ')).strip().upper() ##remove espaços e deixa maiusculo
 palavras = frase.split()                                 ##separa palavras
@@ -599,7 +599,7 @@ else:
     print('Não é palíndromo.')
 print('Voce digitou a frase: {}'.format(inverso))
 '''
-        #sem 'for'
+# sem 'for'
 '''
 frase = str(input('Digite uma frase: ')).strip().upper() ##remove espaços e deixa maiusculo
 palavras = frase.split()                                 ##separa palavras
@@ -612,7 +612,7 @@ else:
 print('Voce digitou a frase: {}'.format(inverso))
 '''
 
-#exercicio 54
+# exercicio 54
 '''
 from datetime import date
 anocorrente = date.today().year
@@ -627,7 +627,7 @@ for pessoa in range(1,8):
 print('{} pessoas são maiores de idade e {} são menores.'.format(maior, menor))
 '''
 
-#exercicio 55
+# exercicio 55
 '''
 maior = 0
 menor = 0
@@ -644,7 +644,7 @@ for pessoa in range(1,6):
 print('maior {}, menor {}'.format(maior, menor))
 '''
 
-#exercicio 56
+# exercicio 56
 '''
 idades = 0
 idadehomem = 0
@@ -669,7 +669,7 @@ print('O homem mais velho tem {} anos e se chama {}.'.format(idadehomem, velho))
 print('Tem {} mulheres menores de 20 anos'.format(menor20))
 '''
 
-#exercicio 57
+# exercicio 57
 '''
 sex = str(input('Digite seu sexo [M/F]: ')).strip().upper()
 opc = ['M', 'F']
@@ -690,7 +690,7 @@ else:
     print('Voce selecionou FEMININO')
 '''
 
-#exercicio 58
+# exercicio 58
 '''
 from random import randint
 numpc = randint(0,10)
@@ -708,7 +708,7 @@ while numuser != numpc:
 print('Voce disse {}. Acertou em {} tentativas!'.format(numuser, tenta))
 '''
 
-#exercicio 59
+# exercicio 59
 '''
 n1 = int(input('Digite o primeiro valor: '))
 n2 = int(input('Digite o segundo valor: '))
@@ -741,7 +741,7 @@ while opc != 5:
 print('Fim.')
 '''
 
-#exercicio 60
+# exercicio 60
 '''
 numx = 1
 num = int(input('Digite o numero para descobrir o fatorial: '))
@@ -760,7 +760,7 @@ f = factorial(num)
 print('O fatorial de {} é {}.'.format(num, f))
 '''
 
-#exercicio 61
+# exercicio 61
 '''
 primeiro = int(input('Primeiro termo: '))
 razao = int(input('Razão PA: '))
@@ -773,7 +773,7 @@ while cont <= 10:
 print('Fim')
 '''
 
-#exercicio 62
+# exercicio 62
 '''
 primeiro = int(input('Primeiro termo: '))
 razao = int(input('Razao: '))
@@ -792,7 +792,7 @@ while mais != 0:
 print('Progressão finalizada com {} termos mostrados'.format(total))
 '''
 
-#exercicio 63
+# exercicio 63
 '''
 n = int(input('Quantos termos voce quer mostrar? '))
 t1 = 0
@@ -808,7 +808,7 @@ while cont <= n:
 print(' - Fim')
 '''
 
-#exercicio 64
+# exercicio 64
 '''
 cont = 0
 total = 0
@@ -820,7 +820,7 @@ while num != 999:
 print('Foram digitados {} numeros e a soma de todos é de {}'.format(cont, total))
 '''
 
-#exercicio 65
+# exercicio 65
 '''
 r = 'S'
 cont = 0
@@ -844,8 +844,8 @@ media = soma / cont
 print('Foram digitados {} numeros. A media é de {}, o menor foi {} e o maior foi {}.'.format(cont, media, menor, maior))
 '''
 
-#exercicio 66
-#break
+# exercicio 66
+# break
 '''
 cont = 0
 soma = 0
@@ -858,7 +858,7 @@ while True:
 print(f'Foram digitados {cont} e o a soma total é de {soma}')
 '''
 
-#exercicio 67
+# exercicio 67
 '''
 while True:
     print('--' * 10)
@@ -871,7 +871,7 @@ while True:
 print('Finalizado')
 '''
 
-#exercicio 68
+# exercicio 68
 '''
 from random import randint
 cont = 0
@@ -897,7 +897,7 @@ while True:
 print(f'Fim do jogo! Voce venceu {cont} vezes.')
 '''
 
-#exercicio 69
+# exercicio 69
 '''
 mais18 = 0
 homem = 0
@@ -947,7 +947,7 @@ while True:
 print(f'Fim do programa. {mais18} pessoas tem mais de 18 anos. {homem} são homens. {mulher20} mulher(es) tem menos de 20 anos.')
 '''
 
-#exercicio 70
+# exercicio 70
 '''
 total = 0
 mais1k = 0
@@ -974,7 +974,7 @@ while True:
 print(f'O total da compra foi de R${total:.2f}, {mais1k} produtos valem mais de R$ 1000. O produto mais barato é {barato}.')
 '''
 
-#exercicio 71
+# exercicio 71
 '''
 saque = int(input('Qual valor a ser sacado: '))
 ced = 50
@@ -998,7 +998,7 @@ while True:
 print('Finalizado')
 '''
 
-#exercicio 72
+# exercicio 72
 '''
 nums = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
         'onze', 'doze', 'treza', 'quatorze', 'quinze', 'dezesseis', 'dezesete', 'dezoito', 'dezenove', 'vinte')
@@ -1018,7 +1018,7 @@ while continua == 'S':
 print('Fim')
 '''
 
-#exercicio 73
+# exercicio 73
 '''
 times = ('Botafogo', 'Red Bull Bragantino', 'Grêmio',
          'Palmeiras', 'Flamengo', 'Fortaleza', 'Fluminense',
@@ -1038,7 +1038,7 @@ print('Goiás esta na posição: ', times.index('Goiás')+1)
 print('==' * 15)
 '''
 
-#exercicio 74
+# exercicio 74
 '''
 from random import randint
 nums = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
@@ -1048,7 +1048,7 @@ print(f'\nO maior valor é: {max(nums)}')
 print(f'O menor valor é: {min(nums)}')
 '''
 
-#exercicio 75
+# exercicio 75
 '''
 nums = (int(input('Digite um numero: ')),
         int(input('Digite outro numero: ')),
@@ -1069,7 +1069,7 @@ for n in nums:
 print('\nFim')
 '''
 
-#exercicio 76
+# exercicio 76
 '''
 lista = ('Lapis', 1.75,
          'Borracha', 2,
@@ -1091,7 +1091,7 @@ for i in range(0, len(lista)):
 print('-' * 40)
 '''
 
-#exercicio 77
+# exercicio 77
 '''
 tupla = ('Abacate', 'Teclado', 'Copo', 'Mesa', 'Arroz', 'Chafariz', 'Carro', 'Porta')
 indice = 'AEIOUaeiou'
@@ -1102,7 +1102,7 @@ for palavra in tupla:
                 print(vogal, end=' ')
 '''
 
-#exercicio 78
+# exercicio 78
 '''
 lista = []
 for c in range (0, 5):
@@ -1121,7 +1121,7 @@ for i, v in enumerate(lista):
         print(f'{i}... ', end='')
 '''
 
-#exercicio 79
+# exercicio 79
 '''
 r = 'S'
 lista = list()
@@ -1138,7 +1138,7 @@ while r in 'S':
 print(f'Valores digitados: {sorted(lista)}')
 '''
 
-#exercicio 80
+# exercicio 80
 '''
 lista = list()
 for c in range(0, 5):
@@ -1155,7 +1155,7 @@ for c in range(0, 5):
 print(f'Valores digitados: {lista}')
 '''
 
-#exercicio 81
+# exercicio 81
 '''
 r = 'S'
 c = 0
@@ -1191,7 +1191,7 @@ if 5 in valores:
 else:
     print('O valor 5 não está na lista.')
 '''
-#exercicio 82
+# exercicio 82
 '''
 lista = []
 par = []
@@ -1210,7 +1210,7 @@ print(f'Sua lista: {lista}')
 print(f'Pares: {sorted(par)}')
 print(f'Impares: {sorted(impar)}')
 '''
-#exercicio 83
+# exercicio 83
 '''
 abre = 0
 fecha = 0
@@ -1244,7 +1244,7 @@ if len(pilha) == 0:
 else:
     print('Sua expressão está errada!')
 '''
-#exercicio 84
+# exercicio 84
 '''
 geral = list()
 pessoa = list()
@@ -1278,7 +1278,7 @@ print()
 
 '''
 
-#exercicio 85
+# exercicio 85
 '''
 listpar = list()
 listimpar = list()
@@ -1293,7 +1293,7 @@ print(f'Pares: {sorted(listpar)}')
 print(f'Impares: {sorted(listimpar)}')
 '''
 
-#exercicio 86
+# exercicio 86
 '''
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 for linha in range(3):
@@ -1306,7 +1306,7 @@ for linha in range(3):
     print()
 '''
 
-#exercicio 87
+# exercicio 87
 '''
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 pares = 0
@@ -1341,7 +1341,7 @@ print(f'A soma dos valores da terceira coluna é: {terceira}')
 print(f'O maior valor da segunda linha é: {maior}')
 '''
 
-#exercicio 88
+# exercicio 88
 '''
 from random import randint
 from time import sleep
@@ -1367,7 +1367,7 @@ for i, l in enumerate(listao):
 print('Fim')
 '''
 
-#exercicio 89
+# exercicio 89
 '''
 alunos = list()
 continua = 'S'
@@ -1400,7 +1400,7 @@ while True:
             print('Digite um numero de aluno valido')
 '''
 
-#exercicio 90
+# exercicio 90
 '''
 aluno = dict()
 aluno['nome'] = str(input('Nome: '))
@@ -1418,7 +1418,7 @@ for k, v in aluno.items():
     print(f'{k} é {v}')
 '''
 
-#exercicio 91
+# exercicio 91
 '''
 from random import randint
 from time import sleep
@@ -1439,7 +1439,7 @@ for i, v in enumerate(rank):
     sleep(0.5)
 '''
 
-#exercicio 92
+# exercicio 92
 '''
 from datetime import date #datetime
 #hoje = datetime.now().year
@@ -1459,7 +1459,7 @@ for k, v in pessoa.items():
     print(f'- {k} é {v}')
 '''
 
-#exercicio 93
+# exercicio 93
 '''
 jogador = dict()
 jogador['nome jogador'] = str(input('Nome do jogador: '))
@@ -1499,7 +1499,7 @@ print(f'Foi um total de {jogador["total"]} gols.')
 
 '''
 
-#exercicio 94
+# exercicio 94
 '''
 pessoas = []
 continuar = 'S'
@@ -1537,7 +1537,7 @@ for i in pessoas:
 print('-=-=' * 10)
 '''
 
-#exercicio 95
+# exercicio 95
 '''
 jogadores = []
 continuar = 'S'
@@ -1586,7 +1586,7 @@ while True:
 print('Encerrando...')
 '''
 
- #exercicio 96
+# exercicio 96
 '''
 def area(largura, comprimento):
     area = largura * comprimento
@@ -1598,7 +1598,7 @@ c = float(input('Comprimento (m): '))
 area(l, c)
 '''
 
-#exercicio 97
+# exercicio 97
 '''
 def escreva(frase):
     tamanho = len(frase) + 4
@@ -1611,7 +1611,7 @@ f = str(input('Digite sua frase: '))
 escreva(f)
 '''
 
-#exercicio 98
+# exercicio 98
 '''
 from time import sleep
 
@@ -1652,7 +1652,7 @@ p = int(input('Digite o passo: '))
 contador(i, f, p)
 '''
 
-#exercicio 99
+# exercicio 99
 '''
 from time import sleep
 
@@ -1689,5 +1689,44 @@ maior()
 espaco()
 '''
 
-#exercicio 100
+# exercicio 100
+'''
+from random import randint
+from time import sleep
 
+def espaco():
+    print('-=' * 20)
+
+
+def sorteia():
+    espaco()
+    print('Sorteando 5 valores: ', end='')
+    lista = []
+    for n in range(0, 5):
+        sort = randint(0, 10)
+        lista.append(sort)
+        print(f'{sort} ', end='')
+        sleep(0.2)
+    print()
+    return lista
+
+
+
+def soma(valores):
+    espaco()
+    somando = 0
+    cont = 0
+    for n in valores:
+        if n % 2 == 0:
+            somando += n
+            cont += 1
+    print(f'Somando os {cont} valores pares, o resultado é {somando}.')
+
+
+soma(sorteia())
+
+#x = sorteia()
+#soma(x)
+'''
+
+#exercicio 101
