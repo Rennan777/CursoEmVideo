@@ -1730,3 +1730,5 @@ soma(sorteia())
 '''
 
 #exercicio 101
+
+
