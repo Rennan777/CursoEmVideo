@@ -1729,6 +1729,34 @@ soma(sorteia())
 #soma(x)
 '''
 
-#exercicio 101
+# exercicio 101
+"""
+
+def voto(nascimento):
+    '''
+    ->  Informe o ano de nascimento e receba informação sobre obrigatoriedade de voto.
+    :param nascimento: ano de nascimento
+    :return: printa na tela sobre a obrigatoriedade de voto
+    '''
+    from datetime import datetime
+    anoatual = datetime.now().year
+    idade = anoatual - nascimento
+    print(f'Com {idade} anos: ', end='')
+    if idade < 16:
+        return 'Não pode votar ainda..'
+    elif 16 <= idade < 18 or idade >= 65:
+        return 'Voto opcional.'
+    else:
+        return 'Voto obrigatório.'
+
+
+nascimento = int(input('Digite o ano de nascimento: '))
+print(voto(nascimento))
+
+#help(voto)
+"""
+
+# exercicio 102
+
 
 
