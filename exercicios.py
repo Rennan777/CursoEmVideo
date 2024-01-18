@@ -1786,3 +1786,20 @@ help(fatorial)
 """
 
 # exercicio 103
+'''
+
+def ficha(nome='<Desconhecido>', gols=0):
+    nome = str(input('Nome do jogador: '))
+    if nome.strip() == '':
+        nome = '<Desconhecido>'
+    gols = input('Numero de gols: ')
+    if type(gols) != int:
+        gols = 0
+    return f'O jogador {nome} fez {gols} gols.'
+
+
+print(ficha())
+'''
+
+#exercicio 104
+
