@@ -1758,5 +1758,31 @@ print(voto(nascimento))
 
 # exercicio 102
 
+"""
+def fatorial(num=1, show=False):
+    '''
+    -> Função para calculo de fatorial
+    :param num: Numero inteiro a ser calculado
+    :param show: Exibir os calculos [True/False]
+    :return: retorna o fatorial do valor informado
+    '''
+    print('--' * 20)
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+        if show:
+            print(f'{c} ', end='')
+            if c > 1:
+                print('x ', end='')
+            else:
+                print('= ', end='')
+    return f
 
 
+print(fatorial(5, True))
+print(fatorial(5))
+help(fatorial)
+
+"""
+
+# exercicio 103
