@@ -1,9 +1,9 @@
-def aumentar(valor, percent=10):
+def aumentar(valor, percent=0):
     percent = (percent / 100) * valor
     return valor + percent
 
 
-def diminuir(valor, percent=10):
+def diminuir(valor, percent=0):
     percent = (percent / 100) * valor
     return valor - percent
 
@@ -14,4 +14,5 @@ def dobro(valor):
 
 def metade(valor):
     return valor / 2
+
 
