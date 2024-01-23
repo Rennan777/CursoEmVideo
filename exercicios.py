@@ -1822,7 +1822,6 @@ n = leiaint('Digite um numero: ')
 print(f'Voce digitou o numero {n}')
 '''
 
-
 # exercicio 105
 '''
 def notas(*n, sit=False):
@@ -1855,7 +1854,45 @@ help(notas)
 '''
 
 # exercicio 106
+'''
+from time import sleep
+
+c = ('\033[m',  # 0 - sem cor
+     '\033[0;30;41m',  # 1 - vermelho
+     '\033[0;30;42m',  # 2 - verde
+     '\033[0;30;43m',  # 3 - amarelo
+     '\033[0;30;44m',  # 4 - azul
+     '\033[0;30;45m',  # 5 - roxo
+     '\033[7;37m',  # 6 - cinza
+     )
 
 
+def mensagem(msg, cor=0):
+    tamanho = len(msg) + 4
+    print(c[cor], end='')
+    print('~' * tamanho)
+    print(f'  {msg}  ')
+    print('~' * tamanho)
+    print(c[0], end='')
+    sleep(0.5)
 
+
+def ajuda():
+    while True:
+        mensagem('SISTEMA DE AJUDA PyHELP', cor=2)
+        resp = str(input('Função ou Biblioteca > '))
+        if resp.upper() == 'FIM':
+            sleep(0.5)
+            break
+        else:
+            mensagem(f"Acessando manual da biblioteca '{resp}'", cor=4)
+            print(c[6], end='')
+            help(resp)
+            print(c[0], end='')
+            sleep(0.5)
+    mensagem('Fim do programa', cor=1)
+
+
+ajuda()
+'''
 
