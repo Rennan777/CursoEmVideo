@@ -1948,5 +1948,47 @@ valor = float(input('Digite um valor: R$'))
 m.resumo(valor, 20, 12)
 '''
 
-#exercicio 111
+
+# exercicio 111
+
+# exercicio 112
+
+# exercicio 113
+'''
+def leiaint(valor):
+    while True:
+        try:
+            x = int(input(valor))
+        except (ValueError, TypeError):
+            print('\033[31mDigite um numero inteiro valido.\033[m')
+            continue
+        except KeyboardInterrupt:
+            print('\033[31mUsuario nao digitou o valor\033[m')
+            break
+        else:
+            return x
+
+
+def leiafloat(valor):
+    while True:
+        try:
+            x = float(input(valor))
+        except (ValueError, TypeError):
+            print('\033[31mDigite um numero real valido.\033[m')
+            continue
+        except KeyboardInterrupt:
+            print('\033[31mUsuario nao digitou o valor\033[m')
+            break
+        else:
+            return x
+
+
+inteiro = leiaint('Digite um numero inteiro: ')
+real = leiafloat('Digite um numero real: ')
+
+print(f'O valor inteiro foi: {inteiro} e o real foi: {real}')
+
+'''
+
+# exercicio 113
 
