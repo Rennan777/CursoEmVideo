@@ -1948,7 +1948,6 @@ valor = float(input('Digite um valor: R$'))
 m.resumo(valor, 20, 12)
 '''
 
-
 # exercicio 111
 
 # exercicio 112
@@ -1990,5 +1989,27 @@ print(f'O valor inteiro foi: {inteiro} e o real foi: {real}')
 
 '''
 
-# exercicio 113
+
+# exercicio 114
+'''
+def conexao(site):
+    """
+    -> testa a conexao com site informado
+    :param site: recebe o endereco completo do site
+    :return: printa na tela o resultado do teste
+    """
+    import urllib.request
+    try:
+        urllib.request.urlopen(site)
+    except urllib.error.URLError:
+        retorno = 'Conexao falhou'
+    else:
+        retorno = 'Conexao Ok'
+    return print(retorno)
+
+
+conexao('http://www.google.com')
+'''
+
+# exercicio 115a
 
